@@ -1,1 +1,0 @@
-# baloghd.github.io
