@@ -35,17 +35,57 @@
 				<section><h2>Survey dataset: findings</h2>
 				</section>
 				<section>
-					<h4><b>FINDING 1:</b> female students have better GPAs on average ($p=$)</h4>
+					<h4><b>FINDING 1:</b> female students have better GPAs on average (p=0.000045)</h4>
 					<img src="boysgirls.png">
 				</section>
 				<section>
-					<h4><b>FINDING 2:</b> those who attended a coaching center had higher GPAs than those who did not </h4>
+					<h4><b>FINDING 2:</b> those who attended a coaching center had higher GPAs than those who did not (p=0.00765) </h4>
 					<img src="coaching.png">
 				</section>
+				
+				<section>
+					<section>
+						<h4><b>FINDING 3:</b> GPAs tend to get worse over time </h4>
+					<img src="coaching.png">
+					</section>
+				</section>
+
 
 				<section>
 					<section>
-						<h4><b>FINDING 3:</b>  Business majors' opinions about the university are worse than Arts or Law majors </h4>
+							
+						<h4><b>FINDING 4:</b> the more a Bachelor student attended the university, the worse their opinions </h4>
+					
+						<table border="1" class="dataframe">
+							<thead>
+							  <tr style="text-align: right;">
+								<th></th>
+								<th>opinion</th>
+								<th>bsc_yr</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<th>opinion</th>
+								<td>1.000000</td>
+								<td>-0.221231</td>
+							  </tr>
+							  <tr>
+								<th>bsc_yr</th>
+								<td>-0.221231</td>
+								<td>1.000000</td>
+							  </tr>
+							</tbody>
+						  </table>
+						
+					</section>
+					<section>
+					
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4><b>FINDING 5:</b>  Business majors' opinions about the university are worse than Arts or Law majors </h4>
 						<table border="1" class="dataframe">
 							<thead>
 							  <tr style="text-align: right;">
@@ -83,100 +123,62 @@
 							</tbody>
 						  </table>
 						
+					
 					</section>
 					<section>
-					
-					</section>
-				</section>
-				<section>
-					<section><h4><b>FINDING 4:</b> the more a Bachelor student attended the university, the worse their opinions </h4>
-					
 						<table border="1" class="dataframe">
 							<thead>
-							  <tr style="text-align: right;">
+							<tr style="text-align: right;">
 								<th></th>
-								<th>opinion</th>
+								<th>count</th>
+								<th>mean</th>
+								<th>std</th>
+							</tr>
+							<tr>
 								<th>bsc_yr</th>
-							  </tr>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
 							</thead>
 							<tbody>
-							  <tr>
-								<th>opinion</th>
-								<td>1.000000</td>
-								<td>-0.221231</td>
-							  </tr>
-							  <tr>
-								<th>bsc_yr</th>
-								<td>-0.221231</td>
-								<td>1.000000</td>
-							  </tr>
+							<tr>
+								<th>1st Year</th>
+								<td>119.0</td>
+								<td>4.151261 </td>
+								<td>0.819659</td>
+							</tr>
+							<tr>
+								<th>2nd Year</th>
+								<td>125.0</td>
+								<td>4.040000</td>
+								<td>0.846244</td>
+							</tr>
+							<tr>
+								<th>3rd Year</th>
+								<td>53.0</td>
+								<td>3.830189</td>
+								<td>0.871247</td>
+							</tr>
+							<tr>
+								<th>4th Year</th>
+								<td>108.0</td>
+								<td>3.675926</td>
+								<td>1.048619</td>
+							</tr>
 							</tbody>
-						  </table></section>
-					<section>
-
-<table border="1" class="dataframe">
-	<thead>
-	  <tr style="text-align: right;">
-		<th></th>
-		<th>count</th>
-		<th>mean</th>
-		<th>std</th>
-	  </tr>
-	  <tr>
-		<th>bsc_yr</th>
-		<th></th>
-		<th></th>
-		<th></th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr>
-		<th>1st Year</th>
-		<td>119.0</td>
-		<td>4.151261</td>
-		<td>0.819659</td>
-	  </tr>
-	  <tr>
-		<th>2nd Year</th>
-		<td>125.0</td>
-		<td>4.040000</td>
-		<td>0.846244</td>
-	  </tr>
-	  <tr>
-		<th>3rd Year</th>
-		<td>53.0</td>
-		<td>3.830189</td>
-		<td>0.871247</td>
-	  </tr>
-	  <tr>
-		<th>4th Year</th>
-		<td>108.0</td>
-		<td>3.675926</td>
-		<td>1.048619</td>
-	  </tr>
-	</tbody>
-  </table>
-</section>
-				</section>
-				<section>
-					<section>
-						<h4><b>FINDING 5:</b> GPAs tend to get worse over time </h4>
-					<img src="coaching.png">
+						</table>
 					</section>
 				</section>
 			
 				<section>
-					<section>
-						<h3>BONUS SLIDE</h3>
-						Hypotheses that looked reasonable but were <b>not</b> significant statistically (at $ \alpha = 5\% $):<br>
-						<ul>
-							<li>
-								Social media use correlates negatively w/ GPA 
-							</li>
-							<li>
-								Students who live in a dorm have different GPA averages than those who live with their family or rent
-							</li>
-						</ul>
+					<section data-markdown>
+						### Bonus Slide
+					
+						* Hypotheses that looked reasonable but were __not__ significant statistically (at $ \alpha = $ 5% ):
+							* Social media use correlates negatively w/ GPA 
+							* Students who live in a dorm have different GPA averages than those who live with their family or rent
+								* dorm students do have worse GPAs on average _in this dataset_ though
 					</section>
 				</section>
 			</div>
