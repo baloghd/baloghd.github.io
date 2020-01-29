@@ -22,12 +22,12 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-		   <script type="text/x-mathjax-config">
+		   <!--<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } });
 		 </script>
    
 	 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-	</head>
+		--></head>
 	<body>
 
 		<div class="reveal">
@@ -110,7 +110,7 @@
 					<section data-markdown>
 						### Bonus Slide
 					
-						* Hypotheses that looked reasonable but were __not__ significant statistically from this dataset(at $ \alpha = $ 5% ):
+						* Hypotheses that looked reasonable but were __not__ significant statistically from this dataset(at 95% confidence):
 							* Social media use correlates negatively w/ GPA 
 							* Students who live in a dorm have different GPA averages than those who live with their family or rent
 								* dorm students do have worse GPAs on average _in this dataset_ though
